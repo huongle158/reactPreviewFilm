@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// Nhưng css cơ bàn sẽ nam ở layer base của tailwind 
+@layer base {
+
+    body{
+        @apply bg-slate-900 font-body px-5 text-white;
+
+    }
+}
+@layer components {
+
+    .page-container{
+        max: width 1280px;;
+        @apply mx-auto
+    }
+    .movie-list .swiper-slide{
+        width: 300px;
+        height: auto
+    }
+    .banner .swiper{
+        height: 100%
+    }
+  
+}
